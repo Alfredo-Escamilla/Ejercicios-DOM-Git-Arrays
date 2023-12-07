@@ -1,0 +1,10 @@
+.miClase {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #000;
+}
+
+#miImagen{
+    width:25%;
+    height: 25%;
+}
