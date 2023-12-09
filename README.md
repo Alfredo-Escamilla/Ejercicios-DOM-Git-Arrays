@@ -8,4 +8,4 @@ Poco a poco iré actualizando el repositorio a medida que vaya haciendo nuevos e
 Como curosiedad, el ejercicio número 9 de DOM_Copilot ha sido resuelto por la IA. Desconocía muchas cosas de las que hay que hacer <br>
 Pero de eso se trata, de ir aprendiendo y poco a poco adquirir conocimientos.<br>
 Me apoyé en los vídeos de freecodcamp que hay en youtube.<br>
-Espero que esots ejercicios te sean de utilidad.  
+Espero que estos ejercicios te sean de utilidad.  
