@@ -1,8 +1,11 @@
-# Ejercicios-Dom.-Nivel_I
-Este repositorio contiene ejercicios básicos para empezar a manejar el DOM.<br>
-El archivo app.js contiene todas las soluciones a los ejercicios, así como los enunciados a los de Chat-Gpt<br>
-Ademas en la carpeta pdfs están los ejercicios y las funciones a usar en dichos ejercicios.<br>
-Han sido generados por Chat-Gpt y por copilot.microsoft.com<br>
-Únicamente he hecho los de Chat-Gpt. Cuando haga los de copilot los subiré.<br>
-No soy muy experto en Git, así que si ves algún error, recuerda que tú también fuiste estudiante. :D<br>
-Espero que te sea de utilidad.
+# Ejercicios JavaScript-DOM / Git / Arrays
+Este repositorio contiene ejercicios básicos para empezar con JavaScript-Dom, GitHub y manejos de arrays.<br>
+Debes tener conocimientos básicos de HTML y CSS para poder realizarlos.<br>
+Los archivos .js contienen todas las soluciones a los ejercicios, así como los enunciados a los mismos.<br>
+Todos los ejercicios han sido generados por IA, Chat-Gpt y Copilot de Microsoft, así como, las sugerencias de mejora.<br>
+En la carpeta pdfs encontrarás los ejercios con la especificación de qué IA los ha generado y una lista con las funciones a utilizar.<br>
+Poco a poco iré actualizando el repositorio a medida que vaya haciendo nuevos ejercicios.<br>
+Como curosiedad, el ejercicio número 9 de DOM_Copilot ha sido resuelto por la IA. Desconocía muchas cosas de las que hay que hacer <br>
+Pero de eso se trata, de ir aprendiendo y poco a poco adquirir conocimientos.<br>
+Me apoyé en los vídeos de freecodcamp que hay en youtube.<br>
+Espero que estos ejercicios te sean de utilidad.  
