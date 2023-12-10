@@ -132,8 +132,6 @@ let colorOriginal
 let clonado
 let nuevoClonado
 
-// Función anónima para el evento de clic derecho
-
 miBoton.addEventListener("mouseenter", function(){
     colorOriginal = miBoton.style.backgroundColor
     let r = Math.floor(Math.random() * 256);
