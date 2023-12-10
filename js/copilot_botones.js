@@ -154,7 +154,6 @@ miBoton.addEventListener("dblclick", function(){
 
 document.addEventListener("keydown", function(event) {
     if (event.key === "Delete" && document.activeElement === miBoton) {
-        // Realizar acciones para la tecla "Delete", como eliminar el botón
         nuevoClonado.remove();
     }
 });
