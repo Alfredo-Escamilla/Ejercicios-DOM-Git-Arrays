@@ -6,6 +6,7 @@
 
 
 
+
 // Ejercicio 2. Toma el primer elemento de la clase "miClase" y cambia su color de fondo a verde y el texto a blanco.
 
 // let miClase = document.querySelector(".miClase");

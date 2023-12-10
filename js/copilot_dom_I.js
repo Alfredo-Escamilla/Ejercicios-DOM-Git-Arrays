@@ -151,6 +151,7 @@
 
 
 
+
 // Ejercicio 9.Cra una tabla con 2 filas y 3 columnas y anádela al cuerpo del documento
 // let tabla = document.createElement("table");
 

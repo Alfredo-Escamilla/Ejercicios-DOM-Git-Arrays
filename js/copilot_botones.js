@@ -162,3 +162,4 @@ document.addEventListener("keydown", function(event) {
 // me ha sido imposible, he tenido que cambiar el evento para la eliminación del botón
 // y lo que se me ha ocurrido es pulsar delete para eliminar el último botón insertado, 
 // ya que al crearse, se queda como elemento activo (con el foco).
+
