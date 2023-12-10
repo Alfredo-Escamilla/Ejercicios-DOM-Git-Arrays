@@ -1,0 +1,17 @@
+/* Puedes agregar estilos adicionales según sea necesario */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+code {
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 90%;
+}
+
+h2 {
+    color: #333;
+}
