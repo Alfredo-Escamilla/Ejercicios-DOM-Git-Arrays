@@ -5,7 +5,7 @@ Los archivos .js contienen todas las soluciones a los ejercicios, así como los 
 Todos los ejercicios han sido generados por IA, Chat-Gpt y Copilot de Microsoft, así como, las sugerencias de mejora.<br>
 En la carpeta pdfs encontrarás los ejercios con la especificación de qué IA los ha generado y una lista con las funciones a utilizar.<br>
 Poco a poco iré actualizando el repositorio a medida que vaya haciendo nuevos ejercicios.<br>
-Como curiosidad, el ejercicio número 9 de DOM_Copilot ha sido resuelto por la IA. Desconocía muchas cosas de las que había que hacer <br>
+En algunos ejercicios he tenido que pedir el código a la IA, ya que aunque sabía cómo hacerlo, desconocía los comandos necesarios. <br>
 Pero de eso se trata, de ir aprendiendo y poco a poco adquirir conocimientos.<br>
 Me apoyé en los vídeos de freecodcamp que hay en youtube.<br>
 Espero que estos ejercicios te sean de utilidad.  
