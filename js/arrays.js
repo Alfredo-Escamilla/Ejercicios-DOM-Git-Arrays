@@ -83,7 +83,7 @@ console.log("Array filtrado según la condición introducida: " + mayoresQue);
 
 
 // Ejercicio 14. Encuentra el primer elemento que cumpla una condición específica.
-
+ 
 
 // Ejercicio 15. Verifica si todos los elementos son mayores que un valor específico.
 
