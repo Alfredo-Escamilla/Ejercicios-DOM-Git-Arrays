@@ -127,17 +127,21 @@
 // Ejercicio 9. Añade un evento al botón para que cuando se haga doble click sobre él, se duplique.
 // Ejercicio 10. Añade un evento al botón para que cuando se haga click derecho, se elimine.
 
-let miBoton = document.querySelector("#miBoton");;
+let miBoton = document.querySelector("#miBoton");
 let colorOriginal;
 let clonado;
-let nuevoClonado;
+let i = 0;
+let idBoton;
+let botonContextual;
+let botonBorrar;
+let identificativo;
 
 miBoton.addEventListener("mouseenter", function () {
     colorOriginal = miBoton.style.backgroundColor
     let r = Math.floor(Math.random() * 256);
     let g = Math.floor(Math.random() * 256);
     let b = Math.floor(Math.random() * 256);
-    miBoton.style.backgroundColor = `rgb(${r},${g},${b}`;
+    miBoton.style.backgroundColor = `rgb(${r},${g},${b})`;
 
 })
 
@@ -148,22 +152,20 @@ miBoton.addEventListener("mouseleave", function () {
 
 miBoton.addEventListener("dblclick", function () {
     clonado = miBoton.cloneNode(true);
-    
-    // miBoton.parentNode.insertBefore(clonado, miBoton.nextSibling); // Añade después del botón original
-    nuevoClonado = document.body.appendChild(clonado); // Anade al final del body
+    //clonado = document.body.appendChild(clonado); // Anade al final del body    
+    miBoton.nextSibling = miBoton.parentNode.insertBefore(clonado, miBoton.nextSibling) // Añade después del botón original
+    identificativo = `miBoton${++i}`
+    botonBorrar = document.getElementById(identificativo);
+
 })
 
-
-
-document.addEventListener("contextmenu", function (e) {
-    nuevoClonado.focus();
+miBoton.addEventListener("contextmenu", function (e) {
+    clonado.focus();
     e.preventDefault();
-    if (document.activeElement === miBoton) {
-        console.log("Condición de igualdad");
+    if (document.activeElement !== miBoton) {
+        document.activeElement.parentNode.removeChild(botonBorrar);
+        i--;
     }
-    else
-        console.log("Condición de NO igualdad");
-        document.activeElement.parentNode.removeChild(document.activeElement);
 });
 
 
