@@ -152,7 +152,8 @@ miBoton.addEventListener("dblclick", function(){
 })
 
 
-document.addEventListener("keydown", function(event) {
+// document.addEventListener("keydown", function(event) {
+document.addEventListener("contextmenu", function(event) {
     if (event.key === "Delete" && document.activeElement === miBoton) {
         nuevoClonado.remove();
     }
