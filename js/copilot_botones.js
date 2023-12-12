@@ -132,7 +132,6 @@ let colorOriginal;
 let clonado;
 let i = 0;
 let idBoton;
-let botonContextual;
 let botonBorrar;
 let identificativo;
 
@@ -152,11 +151,12 @@ miBoton.addEventListener("mouseleave", function () {
 
 miBoton.addEventListener("dblclick", function () {
     clonado = miBoton.cloneNode(true);
-    //clonado = document.body.appendChild(clonado); // Anade al final del body    
-    miBoton.nextSibling = miBoton.parentNode.insertBefore(clonado, miBoton.nextSibling) // Añade después del botón original
-    identificativo = `miBoton${++i}`
+    //clonado = document.body.appendChild(clonado); // Anade al final del body 
+    // Añade después del botón original   
+    miBoton.nextSibling = miBoton.parentNode.insertBefore(clonado, miBoton.nextSibling) 
+    miBoton.nextSibling.id =`miBoton${++i}`;
+    identificativo = `miBoton${i}`
     botonBorrar = document.getElementById(identificativo);
-
 })
 
 miBoton.addEventListener("contextmenu", function (e) {
@@ -166,6 +166,7 @@ miBoton.addEventListener("contextmenu", function (e) {
         document.activeElement.parentNode.removeChild(botonBorrar);
         i--;
     }
+    clonado.focus();
 });
 
 
