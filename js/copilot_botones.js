@@ -151,7 +151,8 @@ miBoton.addEventListener("mouseleave", function () {
 
 miBoton.addEventListener("dblclick", function () {
     clonado = miBoton.cloneNode(true);
-    //clonado = document.body.appendChild(clonado); // Anade al final del body 
+    // Anade al final del body
+    //clonado = document.body.appendChild(clonado);  
     // Añade después del botón original   
     miBoton.nextSibling = miBoton.parentNode.insertBefore(clonado, miBoton.nextSibling) 
     miBoton.nextSibling.id =`miBoton${++i}`;
@@ -166,6 +167,7 @@ miBoton.addEventListener("contextmenu", function (e) {
         document.activeElement.parentNode.removeChild(botonBorrar);
         i--;
     }
+    console.log(document.activeElement);
     clonado.focus();
 });
 
