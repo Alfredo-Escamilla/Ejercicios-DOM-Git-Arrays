@@ -134,6 +134,8 @@ let i = 0;
 let idBoton;
 let botonBorrar;
 let identificativo;
+let idAnterior;
+let botonAnterior;
 
 miBoton.addEventListener("mouseenter", function () {
     colorOriginal = miBoton.style.backgroundColor
@@ -161,14 +163,22 @@ miBoton.addEventListener("dblclick", function () {
 })
 
 miBoton.addEventListener("contextmenu", function (e) {
+    
     clonado.focus();
     e.preventDefault();
+    
+    idAnterior = `miBoton${identificativo - 1}`;
+    botonAnterior = document.getElementById(idAnterior);
+   
     if (document.activeElement !== miBoton) {
         document.activeElement.parentNode.removeChild(botonBorrar);
         i--;
     }
-    console.log(document.activeElement);
-    clonado.focus();
+
+    if (botonAnterior) {
+        botonAnterior.focus()
+    }
+    
 });
 
 
