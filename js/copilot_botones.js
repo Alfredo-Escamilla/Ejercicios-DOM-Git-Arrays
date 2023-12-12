@@ -127,12 +127,12 @@
 // Ejercicio 9. Añade un evento al botón para que cuando se haga doble click sobre él, se duplique.
 // Ejercicio 10. Añade un evento al botón para que cuando se haga click derecho, se elimine.
 
-let miBoton = document.querySelector("#miBoton");
-let colorOriginal
-let clonado
-let nuevoClonado
+let miBoton = document.querySelector("#miBoton");;
+let colorOriginal;
+let clonado;
+let nuevoClonado;
 
-miBoton.addEventListener("mouseenter", function(){
+miBoton.addEventListener("mouseenter", function () {
     colorOriginal = miBoton.style.backgroundColor
     let r = Math.floor(Math.random() * 256);
     let g = Math.floor(Math.random() * 256);
@@ -141,28 +141,30 @@ miBoton.addEventListener("mouseenter", function(){
 
 })
 
-miBoton.addEventListener("mouseleave", function(){
+miBoton.addEventListener("mouseleave", function () {
     miBoton.style.backgroundColor = `${colorOriginal}`;
 })
 
 
-miBoton.addEventListener("dblclick", function(){
+miBoton.addEventListener("dblclick", function () {
     clonado = miBoton.cloneNode(true);
-    nuevoClonado = document.body.appendChild(clonado);
+    
+    // miBoton.parentNode.insertBefore(clonado, miBoton.nextSibling); // Añade después del botón original
+    nuevoClonado = document.body.appendChild(clonado); // Anade al final del body
 })
 
 
-// document.addEventListener("keydown", function(event) {
-document.addEventListener("contextmenu", function(event) {
-    console.log("hola");
-    if (clonado.key === "Delete" && document.activeElement === miBoton) {
-        clonado.remove();
 
+document.addEventListener("contextmenu", function (e) {
+    nuevoClonado.focus();
+    e.preventDefault();
+    if (document.activeElement === miBoton) {
+        console.log("Condición de igualdad");
     }
+    else
+        console.log("Condición de NO igualdad");
+        document.activeElement.parentNode.removeChild(document.activeElement);
 });
 
-// Después de más de una hora de intentar desactivar el menú contextual del navegador
-// me ha sido imposible, he tenido que cambiar el evento para la eliminación del botón
-// y lo que se me ha ocurrido es pulsar delete para eliminar el último botón insertado, 
-// ya que al crearse, se queda como elemento activo (con el foco).
+
 
