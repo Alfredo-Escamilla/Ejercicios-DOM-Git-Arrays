@@ -162,22 +162,24 @@ miBoton.addEventListener("dblclick", function () {
     botonBorrar = document.getElementById(identificativo);
 })
 
-miBoton.addEventListener("contextmenu", function (e) {
-    
-    clonado.focus();
+miBoton.addEventListener("contextmenu", function(e) {
     e.preventDefault();
+    let buttonToRemove = e.target.parentNode.childNodes[2];
+    e.target.parentNode.removeChild(buttonToRemove);
     
-    idAnterior = `miBoton${identificativo - 1}`;
-    botonAnterior = document.getElementById(idAnterior);
+    // clonado.focus();
+    
+    // idAnterior = `miBoton${identificativo - 1}`;
+    // botonAnterior = document.getElementById(idAnterior);
    
-    if (document.activeElement !== miBoton) {
-        document.activeElement.parentNode.removeChild(botonBorrar);
-        i--;
-    }
+    // if (document.activeElement !== miBoton) {
+    //     document.activeElement.parentNode.removeChild(botonBorrar);
+    //     i--;
+    // }
 
-    if (botonAnterior) {
-        botonAnterior.focus()
-    }
+    // if (botonAnterior) {
+    //     botonAnterior.focus()
+    // }
     
 });
 
